@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/Text_prayer"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_weight="0.92" >
+
+        <requestFocus />
+    </TextView>
+
+    <ImageView
+        android:id="@+id/IVdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/mother1" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="46dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hd_angelous" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hdcross" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hd_hailmary" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hd_ourfather" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hd_greed" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hd_sm_sorrow" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hd_big_sorrow" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:padding="3dp"
+                android:src="@drawable/hd_euchrist" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

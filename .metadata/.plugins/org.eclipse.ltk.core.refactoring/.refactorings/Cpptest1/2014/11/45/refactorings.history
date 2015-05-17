@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Cpptest1/Occupancydetector&apos; to &apos;Occupancydetector.cpp&apos;" description="Rename resource &apos;Occupancydetector&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Occupancydetector" name="Occupancydetector.cpp" stamp="1415130443111" updateReferences="true"/>
+</session>

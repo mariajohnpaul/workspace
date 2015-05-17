@@ -1,0 +1,24 @@
+#include <stdio.h>
+char arr[100];
+static int top=0;
+void push(char in)
+{
+arr[top++]=in;
+}
+void pop(void)
+{
+	arr[--top]
+}
+
+int main()
+{
+	char ch;
+    arr[0]='\0';
+
+	scanf("%d",ch);
+	if(ch=='-')pop();
+	push(ch);
+
+
+return 0;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+	<extension id="GCCErrorParser" name="GNU gcc/g++ Error Parser" point="org.eclipse.cdt.core.ErrorParser">
+		<errorparser class="org.eclipse.cdt.core.errorparsers.RegexErrorParser" id="org.eclipse.cdt.core.GCCErrorParser" name="GNU gcc/g++ Error Parser">
+			<pattern description-expr="" eat-processed-line="true" file-expr="" line-expr="" regex="(.*?):(\d+):(\d+:)? .*\(Each undeclared identifier is reported only once.*" severity="Ignore"/>
+			<pattern description-expr="" eat-processed-line="true" file-expr="" line-expr="" regex="(.*?):(\d+):(\d+:)? .*for each function it appears in.\).*" severity="Ignore"/>
+			<pattern description-expr="" eat-processed-line="true" file-expr="" line-expr="" regex="(.*?):(\d+):(\d+:)? .*this will be reported only once per input file.*" severity="Ignore"/>
+			<pattern description-expr="$4" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)? [Ee]rror: ([`'&quot;](.*)['&quot;] undeclared .*)" severity="Error"/>
+			<pattern description-expr="$4" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)? [Ee]rror: (conflicting types for .*[`'&quot;](.*)['&quot;].*)" severity="Error"/>
+			<pattern description-expr="$4" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)? (parse error before.*[`'&quot;](.*)['&quot;].*)" severity="Error"/>
+			<pattern description-expr="$4" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)? [Ww]arning: ([`'&quot;](.*)['&quot;] defined but not used.*)" severity="Warning"/>
+			<pattern description-expr="$4" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)? [Ww]arning: (conflicting types for .*[`'&quot;](.*)['&quot;].*)" severity="Warning"/>
+			<pattern description-expr="$5" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)? ([Ww]arning:)?\s*(the use of [`'&quot;](.*)['&quot;] is dangerous, better use [`'&quot;](.*)['&quot;].*)" severity="Warning"/>
+			<pattern description-expr="$4" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)?\s*(.*((instantiated)|(required)) from .*)" severity="Info"/>
+			<pattern description-expr="$7" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)?\s*(([Ee]rror)|(ERROR)): (.*)" severity="Error"/>
+			<pattern description-expr="$7" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)?\s*(([Ww]arning)|(WARNING)): (.*)" severity="Warning"/>
+			<pattern description-expr="$9" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)?\s*(([Nn]ote)|(NOTE)|([Ii]nfo)|(INFO)): (.*)" severity="Info"/>
+			<pattern description-expr="$4" eat-processed-line="true" file-expr="$1" line-expr="$2" regex="(.*?):(\d+):(\d+:)? (.*)" severity="Error"/>
+			<pattern description-expr="" eat-processed-line="true" file-expr="" line-expr="" regex="" severity="Error"/>
+		</errorparser>
+	</extension>
+</plugin>

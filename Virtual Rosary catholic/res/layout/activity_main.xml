@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rosarybanner" >
+
+    <Button
+        android:id="@+id/happy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/happy" />
+
+    <Button
+        android:id="@+id/Glory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/happy"
+        android:text="@string/Glory" />
+
+    <Button
+        android:id="@+id/Sad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Glory"
+        android:text="@string/Sad" />
+
+    <Button
+        android:id="@+id/luminous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Sad"
+        android:text="@string/luminous" />
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="139dp"
+        android:text="@string/Start"
+        android:textColorLink="#1531EC"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Start"
+        android:layout_centerHorizontal="true"
+        android:text="@string/todayprayer"
+        android:textSize="30dp" />
+
+</RelativeLayout>

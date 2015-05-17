@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Rosary catholic</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Rosary - Ave Maria</string>
+    <string name="happy">happy</string>
+    <string name="luminous">luminous</string>
+    <string name="Sad">Sad</string>
+    <string name="Glory">Glory</string>
+    <string name="Start">Start</string>
+    <string name="Today">Today Rosary suggested</string>
+    <string name="todayprayer">Today Prayer</string>
+    <string name="Home">Home</string>
+    <string name="tvHappy">tvHappy</string>
+    <string name="Count"></string>
+    <string name="previous">Prv</string>
+    <string name="Next">Next</string>
+    <string name="tvDisplayPrayer"></string>
+
+</resources>

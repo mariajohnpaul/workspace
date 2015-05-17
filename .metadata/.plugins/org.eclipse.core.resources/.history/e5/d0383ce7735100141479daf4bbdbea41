@@ -1,0 +1,23 @@
+package helloworld;
+
+public class Unionfind {
+
+	int id[];
+	
+	public Unionfind(int no)
+	{
+		for(int i=0;i<no;i++)id[i]=i;
+	}
+	public boolean connected(int x, int y)
+	{
+		if(id[x]==id[y]) retrurn TRUE;
+		return FALSE;
+	}
+	
+	public static void main(String []args)
+	{
+		int N = 10;
+		int input[][]= {{4,3},{3,8},{6,5},{9,4},{2,1},{8,9},{5,0},{7,2},{6,1},{1,0},{6,7}};
+	}
+
+}

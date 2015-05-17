@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+org.eclipse.cdt.ui.add_comments=true
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="org.eclipse.cdt.core.cxxSource.contenttype_context" deleted\="false" description\="Default template for newly created C++ source files" enabled\="true" id\="org.eclipse.cdt.ui.text.codetemplates.cppsourcefile" name\="Default C++ source template">${filecomment}\r\n${includes}\r\n\r\n${namespace_begin}\r\n\r\n${declarations}\r\n\r\n${namespace_end}</template><template autoinsert\="false" context\="org.eclipse.cdt.core.cxxSource.contenttype_context" deleted\="false" description\="MJCPPtemplate" enabled\="true" name\="MJCPP">${filecomment}\r\n${includes}\r\n\#include&lt;iostream&gt;\r\nusing namespace std;\r\n${namespace_begin}\r\n\r\n${declarations}\r\nint main()\r\n{\r\n\r\n}\r\n${namespace_end}</template></templates>
+sourceHoverBackgroundColor=255,255,225
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
+wizard.preferred.toolchains=com.android.toolchain.gcc

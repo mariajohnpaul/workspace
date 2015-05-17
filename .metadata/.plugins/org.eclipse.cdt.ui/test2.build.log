@@ -1,0 +1,6 @@
+09:02:06 **** Incremental Build of configuration Debug for project test2 ****
+sh ndk-build all 
+/usr/bin/sh: ndk-build: No such file or directory
+
+09:02:06 Build Finished (took 113ms)
+

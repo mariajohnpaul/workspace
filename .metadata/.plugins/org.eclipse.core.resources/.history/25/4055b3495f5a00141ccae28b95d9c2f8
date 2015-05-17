@@ -1,0 +1,63 @@
+/*
+ * Heap.cpp
+ *
+ *  Created on: Oct 22, 2014
+ *      Author: maria_000
+ */
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+class MaxHeap
+{
+private :
+	int arr[];
+	int length;
+public:
+	MaxHeap(void)
+{
+		arr= new arr[100];
+		length=1;
+for(int i=0;i<100;i++)
+{
+	arr[i]=0;
+}
+}
+
+void createHeap(int a[],int N)
+{
+for(int i=0;i<N;i++)
+{
+	addheap(a[i]);
+}
+}
+void addheap(int el)
+{
+arr[length]=el;
+
+swim(length);
+length++;
+}
+void swim(int nd)
+{
+	int temp=length/2;
+	while(temp>1)
+	{
+		if(arr[nd]>arr[temp])
+			swap(arr[nd],arr[temp]);
+	}
+}
+
+};
+void main()
+{
+
+	class MaxHeap *Hptr = new (MaxHeap);
+    static int inp[100];
+	for( int i=0;i<100;i++)
+			{
+			inp[i]=rand();
+			}
+
+}
+

@@ -1,0 +1,102 @@
+/*
+ * Heap.cpp
+ *
+ *  Created on: Oct 22, 2014
+ *      Author: maria_000
+ */
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+class MaxHeap
+{
+private :
+	int *arr;
+	int length;
+public:
+	MaxHeap(void)
+{
+	arr = new int[100];
+	fill_n(arr,100,0);
+	length=1;
+for(int i=0;i<100;i++)
+{
+	arr[i]=0;
+}
+}
+
+void createHeap(int a[],int N)
+{
+for(int i=0;i<N;i++)
+{
+	addheap(a[i]);
+}
+}
+void addheap(int el)
+{
+arr[length]=el;
+
+swim(length);
+length++;
+}
+void swim(int nd)
+{
+	int temp=length/2;
+	while(temp>=1)
+	{
+		if(arr[nd]>arr[temp])
+		{
+			swap(arr[nd],arr[temp]);
+		nd=temp;
+		temp=temp/2;
+		}else
+			return;
+	}
+}
+
+void sink(int nd)
+{
+	int temp=2*nd;
+while(temp<length)
+{
+	int mx= (arr[temp]>arr[temp+1])?temp:temp+1;
+	if(arr[nd]<arr[mx])
+		{
+		swap(arr[nd],arr[mx]);
+		nd=mx;
+		temp=2*nd;
+		}
+	else{
+		return;
+	}
+}
+}
+void display()
+{
+	for(int i=0;i<100;i++)
+	cout<<arr[i]<<" ";
+}
+void modify_top(int pos,int value){
+arr[pos]=value;
+sink(pos);
+}
+};
+int main()
+{
+
+	class MaxHeap *Hptr = new (MaxHeap);
+    static int inp[100];
+	for( int i=0;i<10;i++)
+			{
+			inp[i]=rand()%10;
+			}
+	Hptr->createHeap(inp,10);
+	Hptr->display();
+
+	cout<<"\n";
+	Hptr->modify_top(1,1);
+	Hptr->sink(1);
+
+return 1;
+}
+

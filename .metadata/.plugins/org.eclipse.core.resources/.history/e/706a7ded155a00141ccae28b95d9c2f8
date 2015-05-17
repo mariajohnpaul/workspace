@@ -1,0 +1,33 @@
+#include <stdio.h>
+char arr[100];
+static int top=0;
+void push(char in)
+{
+arr[top++]=in;
+arr[top]='\0';
+}
+void pop(void)
+{
+	arr[--top]='\0';
+}
+
+int main()
+{
+	char ch='+';
+    arr[0]='\0';
+void (*fptr[2])(void);
+fptr[0]=push;
+fptr[1]=pop;
+    scanf("%c",&ch);
+	while(ch!='+')
+	{
+
+    if(ch=='-')fptr[1]();
+    else
+    	fptr[1](ch);
+	 scanf("%c",&ch);
+	}
+printf("%s",arr);
+
+return 0;
+}

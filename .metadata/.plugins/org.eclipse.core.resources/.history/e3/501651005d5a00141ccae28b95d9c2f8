@@ -1,0 +1,30 @@
+/*
+ * Heap.cpp
+ *
+ *  Created on: Oct 22, 2014
+ *      Author: maria_000
+ */
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+class MaxHeap
+{
+private :
+	arr[100];
+public:
+	MaxHeap(void)
+{
+
+}
+
+
+};
+void main()
+{
+
+	class MaxHeap *Hptr = new (MaxHeap);
+
+
+}
+

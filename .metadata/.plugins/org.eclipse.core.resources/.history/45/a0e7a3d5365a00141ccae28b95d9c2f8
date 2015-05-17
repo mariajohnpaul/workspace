@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int arr[100];
+
+int main()
+{
+
+	for(int i=0;i<100;i++)
+		{
+		arr[i]=rand();
+		}
+	quicksort(arr,0,100);
+
+return 0;
+}
