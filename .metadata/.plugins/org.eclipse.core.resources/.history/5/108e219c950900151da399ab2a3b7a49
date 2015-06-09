@@ -1,0 +1,48 @@
+package helloworld;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class EventHandling extends JFrame {
+	
+	private JTextField jtf1 ;
+	private JTextField jtf2 ;
+	private JTextField jtf3 ;
+	
+	private JPasswordField jpf;
+	
+	public EventHandling(){
+		super("The Title");
+		setLayout(new FlowLayout());
+		
+		jtf1 = new JTextField(10);
+		add(jtf1);
+		
+		jtf2 = new JTextField("Enter the Text");
+		add(jtf2);
+		
+		jtf3 = new JTextField("Not Editable",20);
+		jtf3.setEditable(false);
+		add(jtf3);
+		
+		jpf = new JPasswordField("My Pass");
+		add(jpf);
+	}
+	
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EventHandling obj = new EventHandling();
+		obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		obj.setSize(300,300);
+		obj.setVisible(true);
+	}
+		
+
+}

@@ -1,0 +1,17 @@
+package helloworld;
+
+import javax.swing.JOptionPane;
+
+public class Windows  {
+	
+	public static void main (String [] args)
+	{
+		String fn = JOptionPane.showInputDialog("Enter the first no");
+		String sn = JOptionPane.showInputDialog("Enter the second no");
+		
+		int ans = Integer.parseInt(fn)+Integer.parseInt(sn);
+		
+		JOptionPane.showMessageDialog(ans);
+	}
+
+}

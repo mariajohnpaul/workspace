@@ -1,0 +1,20 @@
+package helloworld;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+
+public class Windows1 extends JFrame{
+	
+	public Windows1()
+	{
+		super("The Title Bar");
+		setLayout(new FlowLayout());
+		
+		JLabel item = new JLabel("Hi John");
+		
+	}
+	
+	
+
+}

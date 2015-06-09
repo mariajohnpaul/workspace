@@ -1,0 +1,29 @@
+package helloworld;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Windows1 extends JFrame{
+	
+	public Windows1()
+	{
+		super("The Title Bar");
+		setLayout(new FlowLayout());
+		
+		JLabel item = new JLabel("Hi John");
+		item.setToolTipText("This is Hint");
+		
+		add(item);
+	}
+	
+	public static void main(String [] args)
+	{
+		Windows1 obj = new Windows1();
+		obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		obj.setSize(275,180);
+		obj.setVisible(true);
+	}
+
+}
